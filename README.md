@@ -1,22 +1,25 @@
-# ids_python
-Tugas Akhir Sistem Forensik Digital menggunakan IDS
+# IDS with Python
 
-Alat yang harus digunakan.
+Final Project of Digital Forensics System Course with IDS in my campus
+
+Tools that used:
+
 > Mininet
 > Ryu Controller
 > VSCode
 
-Cara penggunaan
-- Bentuk topologi SDN pada mininet
-- Sambungkan topologi pada mininet dengan controller
-- Jalankan controller ryu dengan kode dari file server.py
+How to use this code:
+
+- The shape of the SDN topology on the mininet
+- Connect the topology to the mininet with the controller
+- Run the ryu controller with the code from the server.py file
   ryu-manager server.py
-- Jalankan topologi mininet
-- ping host1 ke host2
+- Run mininet topology
+- ping host1 to host2
   h1 ping h2
-- pada host 2 jalankan kode client.py
+- on host 2 run client.py code
   h2 python client.py
-- ambil satu hash yang keluar dari program client.py
-- Jalankan kode client-dummy.py pada komputer asli diluar host mininet, dengan parameter salah satu hash
+- get a hash that comes out of the client.py program
+- Run client-dummy.py code on a real machine outside the mininet host, with a parameter of one of the hashes
   python client-dummy.py 39kj2nh4j3nj2nk432n4jk232
-- Jika hash ada maka akan mengembalikan result True, jika hash tidak ada maka akan mengembalikan result False
+- If the hash exists it will return the result True, if the hash does not exist it will return the result False
